@@ -39,3 +39,16 @@ Bundles are exportable with features.
 - in codebase go to contrib modules and find paragraphs module : www/sites/all/modules/contrib/paragraphs
 - check out readme.md
 - then open www/sites/all/modules/custom/corp_paragraphs/bundles
+- in the terminal run `touch card_promo.inc`
+- add preprocess comments
+```
+/**
+ * @file
+ * Functions specific to the 'card_promo' paragraphs_item bundle.
+ */
+
+/**
+ * Deferred preprocess function for entity.
+ */
+
+```
