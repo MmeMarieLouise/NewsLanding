@@ -17,6 +17,9 @@
 - Create required fields for paragraph
 - Attach it to the existing page as a drop down option and add the paragraph type to news landing : structure > content types > news landing > manage fields > Paragraph Content > edit
 - create a news landing test to check that your paragraph works content > add content > News landing > populate text fields > select your paragraph
+
+#### Write Template Preprocess Function Drupal 7
+
 - in codebase go to contrib modules and find paragraphs module : www/sites/all/modules/contrib/paragraphs
-- check out read me
+- check out readme.md
 - 
