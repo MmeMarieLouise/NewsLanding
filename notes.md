@@ -62,6 +62,7 @@ Bundles are exportable with features.
 - check out readme.md
 - then open www/sites/all/modules/custom/corp_paragraphs/bundles
 - in the terminal run `touch card_promo.inc`
+- add php opening tags `<?php`
 - add preprocess comments
 ```
 /**
@@ -74,3 +75,50 @@ Bundles are exportable with features.
  */
 
 ```
+
+
+
+
+### Introduction to theming in Drupal 7
+
+
+When a page is created in drupal it outputs default HTML mark up, as the themer I must modify that HTML output to conform to the HTML I need for my design
+
+#### Three steps to Theming
+
+Info files - which are meta data that tell drupal what the theme does and what its name is
+Template files (or any file that ends with .tpl.php extension)
+Template.php, used to override or replace the variables
+
+#### Structure of theme
+
+The themes that we create are in sites > all > themes. Add your theme dir > MyTheme
+
+The files in your template dir which are optional
+
+- mytheme.info    
+- tell drupal what your theme can do  
+- Define basic properties for your theme:
+   - Name and description
+   - css/ js files
+   - Features (logo, slogan, search box, etc.)
+   - Page regions (left sidebar, right sidebar, header, etc)
+
+**NOTE:** the only 3 required things in a .info file are
+1. `name = `
+1. `description =`
+1. `Core = 7. X` (need to specify the version of drupal that the site is compatible with)
+
+Also should add external links to JS scripts and CSS stylesheets 
+
+themes in drupal are responsible for declaring all of the regions  which are available  for an administrator to place blocks into.
+Regions are declared inside a .info file
+Declaration of features (which appears as a check box)
+
+
+Regions are also declared
+- Page.tpl.php (control the overall layout of your site)
+- Template.php (set variables and override theme functions)
+
+
+[ref:](https://www.youtube.com/watch?v=dS4JR0BbKO8)
