@@ -57,6 +57,7 @@ Bundles are exportable with features.
 
 #### Write Template Preprocess Function Drupal 7
 
+- make sure that the Devel module is enabled (for debugging)
 - in codebase go to contrib modules and find paragraphs module : www/sites/all/modules/contrib/paragraphs
 - check out readme.md
 - then open www/sites/all/modules/custom/corp_paragraphs/bundles
