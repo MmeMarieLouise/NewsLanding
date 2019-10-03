@@ -15,6 +15,11 @@ This module module might be considered a clone of field_collection (on which it 
 
 Bundles are exportable with features.
 
+### function hook_preprocess_HOOK : Definition
+
+- This hook allows modules to preprocess theme variables for a specific theme hook.
+- It should only be used if a module needs to override or add to the theme preprocessing for a theme hook it didn't define.
+
 
 #### Paragraph fields
 
@@ -33,6 +38,22 @@ Bundles are exportable with features.
 - Create required fields for paragraph
 - Attach it to the existing page as a drop down option and add the paragraph type to news landing : structure > content types > news landing > manage fields > Paragraph Content > edit
 - create a news landing test to check that your paragraph works content > add content > News landing > populate text fields > select your paragraph
+
+#### Preprocessing explained
+
+- data transformation
+- get the field data and we want to do something with it
+- separation of concerns therefore logic lives outside of template
+- Customisation - render arrays (twig consumes them on the webpage)
+
+1. Each paragraph type is defined in hook_theme
+1. All preprocessing handled by a class
+1. Each paragraph type has a corresponding method
+1. Each paragraph type has a corresponding twig template
+
+#### Variable API 
+
+- This module extends the Drupal core variable API that handles persistent variables
 
 #### Write Template Preprocess Function Drupal 7
 
