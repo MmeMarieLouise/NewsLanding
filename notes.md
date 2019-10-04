@@ -57,6 +57,12 @@ Bundles are exportable with features.
 
 #### Write Template Preprocess Function Drupal 7
 
+In Drupal the 'themeable' output allows you to control they way that information is conveyed to the user
+
+The modules pass the information to the themes and then the themes control output.
+
+[ref](https://www.youtube.com/watch?v=UOvxCChgSOU)
+
 - make sure that the Devel module is enabled (for debugging)
 - in codebase go to contrib modules and find paragraphs module : www/sites/all/modules/contrib/paragraphs
 - check out readme.md
