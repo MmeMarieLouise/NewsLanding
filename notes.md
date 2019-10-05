@@ -128,3 +128,18 @@ Regions are also declared
 
 
 [ref:](https://www.youtube.com/watch?v=dS4JR0BbKO8)
+
+#### Drupal 8 quick start up
+
+- open new repo in gitHub
+- mkdir etc
+- Install Drupal Virtual Machine in repo dir
+- Install Virtual Box
+- clone repo into sites dir
+- Install Vagrant
+- cd into VM dir via terminal, run `vagrant up`
+
+- change admin details with new username and password
+- download paragraphs, `vagrant ssh`, manually download zip file, un zip and then move dir to NewsLanding > drupal-vm > drupal > web > modules > contrib. then in path `/var/www/drupalvm/drupal/web` Enable module, run `drush en paragraphs`
+- download entity_reference_revisions , `vagrant ssh`, manually download zip file, un zip and then move dir to  ** NewsLanding > drupal-vm > drupal > web > modules > contrib. then in path `/var/www/drupalvm/drupal/web` Enable module, run `drush en entity_reference_revisions
+`
