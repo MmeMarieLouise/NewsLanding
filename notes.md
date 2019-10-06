@@ -142,4 +142,10 @@ Regions are also declared
 - change admin details with new username and password
 - download paragraphs, `vagrant ssh`, manually download zip file, un zip and then move dir to NewsLanding > drupal-vm > drupal > web > modules > contrib. then in path `/var/www/drupalvm/drupal/web` Enable module, run `drush en paragraphs`
 - download entity_reference_revisions , `vagrant ssh`, manually download zip file, un zip and then move dir to  ** NewsLanding > drupal-vm > drupal > web > modules > contrib. then in path `/var/www/drupalvm/drupal/web` Enable module, run `drush en entity_reference_revisions
-`
+`- enable pargargraphs type permissions in drupal admin UI
+
+
+#### Creating a paragraph in drupal 8
+
+- go to content type > article > manage fields > body > edit > delete 
+- create paragraph type > structure > paragraph types > add paragraph >
